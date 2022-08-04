@@ -1,6 +1,6 @@
-INSERT INTO pizzeria_user (id, name, username, password, email, roles) VALUES (1, 'Alfonso Capone', 'alcapone', '$2y$11$QtP.wOVMy6Bd9j0cbi5DQ.6j34nqbB/j/vks8dvwLcrzDPvSQa5gy', 'al@capone.net', '["CUSTOMER"]') ON CONFLICT DO NOTHING;
-INSERT INTO pizzeria_user (id, name, username, password, email, roles) VALUES (2, 'Master cheff', 'cheff', '$2y$11$QtP.wOVMy6Bd9j0cbi5DQ.6j34nqbB/j/vks8dvwLcrzDPvSQa5gy', 'someone@cheff.it', '["PIZZA_MAKER"]') ON CONFLICT DO NOTHING;
-INSERT INTO pizzeria_user (id, name, username, password, email, roles) VALUES (3, 'Pelé', 'pele', '$2a$11$0Ykt5/rC6pm0heECrgXIIeiQOSCR0DEVNzN2mCL8VIV1GmFxa9Sy.', 'other@capone.net', '["CUSTOMER", "PIZZA_MAKER"]') ON CONFLICT DO NOTHING;
+INSERT INTO customer (id, name, username, password, email, roles) VALUES (1, 'Alfonso Capone', 'alcapone', '$2y$11$QtP.wOVMy6Bd9j0cbi5DQ.6j34nqbB/j/vks8dvwLcrzDPvSQa5gy', 'al@capone.net', '["CUSTOMER"]') ON CONFLICT DO NOTHING;
+INSERT INTO customer (id, name, username, password, email, roles) VALUES (2, 'Master cheff', 'cheff', '$2y$11$QtP.wOVMy6Bd9j0cbi5DQ.6j34nqbB/j/vks8dvwLcrzDPvSQa5gy', 'someone@cheff.it', '["PIZZA_MAKER"]') ON CONFLICT DO NOTHING;
+INSERT INTO customer (id, name, username, password, email, roles) VALUES (3, 'Pelé', 'pele', '$2a$11$0Ykt5/rC6pm0heECrgXIIeiQOSCR0DEVNzN2mCL8VIV1GmFxa9Sy.', 'other@capone.net', '["CUSTOMER", "PIZZA_MAKER"]') ON CONFLICT DO NOTHING;
 
 -- password is 'pwd'
 

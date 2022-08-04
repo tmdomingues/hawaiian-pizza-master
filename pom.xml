@@ -8,7 +8,7 @@
 		<version>2.3.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.graphaware</groupId>
+	<groupId>com.tiago</groupId>
 	<artifactId>pizzeria</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>pizzeria</name>
@@ -57,6 +57,7 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!--- ********* Tests ********** -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

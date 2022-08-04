@@ -6,4 +6,4 @@ services:
       POSTGRES_PASSWORD: gennaro
       POSTGRES_USER: pizzeria
     ports:
-      - 5432:5432
+      - 5452:5432
