@@ -28,32 +28,32 @@ public class PurchaseController {
 
 	}
 
-	@PostMapping("addPizza")
+	@PostMapping("pizza")
 	@Operation(summary = "My endpoint", security = @SecurityRequirement(name = "bearerAuth"))
 	public ResponseEntity<Purchase> addToBasket(@RequestBody Pizza pizza) {
 		Purchase purchase = purchaseService.addPizzaToPurchase(pizza);
 		return new ResponseEntity<>(purchase, HttpStatus.OK);
 	}
 
-	@PostMapping("submitOrder")
+	@PostMapping("order")
 	public ResponseEntity<Void> submitPurchase() {
 		purchaseService.confirmPurchase();
 		return new ResponseEntity<>(HttpStatus.CREATED);
 	}
 
-	@GetMapping("pickPurchase")
+	@GetMapping("pick")
 	public ResponseEntity<Purchase> pickPurchase() {
 		Purchase purchase = purchaseService.pickPurchase();
 		return new ResponseEntity<>(purchase, HttpStatus.OK);
 	}
 
-	@PutMapping("completePurchase/{id}")
+	@PutMapping("complete/{id}")
 	public ResponseEntity<Void> completePurchase(@PathVariable("id") long id) {
 		purchaseService.completePurchase(id);
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 
-	@GetMapping("currentPurchase")
+	@GetMapping("current")
 	public ResponseEntity<Purchase> getCurrentPurchase() {
 		Purchase purchase = purchaseService.getCurrentPurchase();
 		if (purchase != null) {

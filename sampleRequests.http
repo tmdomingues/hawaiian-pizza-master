@@ -24,7 +24,7 @@ Authorization: Basic YWxjYXBvbmU6cHdk
 }
 
 ###
-POST localhost:8080/purchase/addPizza
+POST localhost:8080/purchase/pizza
 Content-Type: application/json
 Authorization: Basic YWxjYXBvbmU6cHdk
 
@@ -40,21 +40,21 @@ Authorization: Basic YWxjYXBvbmU6cHdk
 }
 
 ###
-POST localhost:8080/purchase/submitOrder
+POST localhost:8080/purchase/order
 Content-Type: application/json
 Authorization: Basic YWxjYXBvbmU6cHdk
 
 ###
-GET localhost:8080/purchase/pickPurchase
+GET localhost:8080/purchase/pick
 Content-Type: application/json
 Authorization: Basic Y2hlZmY6cHdk
 
 ###
-GET localhost:8080/purchase/currentPurchase
+GET localhost:8080/purchase/current
 Content-Type: application/json
 Authorization: Basic Y2hlZmY6cHdk
 
 ###
-PUT localhost:8080/purchase/completePurchase/6
+PUT localhost:8080/purchase/complete/6
 Content-Type: application/json
 Authorization: Basic Y2hlZmY6cHdk
